@@ -1,0 +1,28 @@
+.slider-show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #eee2e2;
+
+}
+.slider-elements{
+    text-align: center;
+    
+
+}
+.slider-element{
+    position: absolute;
+    transform: translate(-50% , -50%) scale(0);
+    transition: transform 0.6s;
+
+}
+.slider-element h2,i{
+    font-size: 8rem;
+}
+
+.slider-element.current{
+    transform: translate(-50% , -50%) scale(1);
+    transition: transform 0.6s;
+  
+}
